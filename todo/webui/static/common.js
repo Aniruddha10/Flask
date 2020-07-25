@@ -1,0 +1,4 @@
+function validatestring()
+{
+ alert('hi');
+}

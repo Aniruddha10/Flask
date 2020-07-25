@@ -1,0 +1,15 @@
+{% extends 'master.html' %}
+{% block head%}
+
+{% endblock %}
+{% block body%}
+{{ super() }}
+    <table>
+        <tr>
+            <td>
+                {% block firstrow %}
+                {% endblock %}
+            </td>
+        </tr>
+    </table>
+{% endblock %}

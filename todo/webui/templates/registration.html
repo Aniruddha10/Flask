@@ -1,0 +1,12 @@
+{% extends 'OneHorizontalBlock.html' %}
+{% block head %}{% endblock %}
+
+{% block firstrow %}
+
+<form action = "/registeruser" method = "post">
+     <p>User Name: <input type = "text" name = "uid" /></p>
+     <p>Password 1: <input type = "password" name = "pwd1" /></p>
+     <p>Password 2: <input type = "password" name = "pwd2" /></p>
+     <p><input type = "submit" value = "submit" onclick="validatestring()" /></p>
+</form>
+{% endblock %}

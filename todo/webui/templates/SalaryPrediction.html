@@ -1,0 +1,15 @@
+{% extends 'OneHorizontalBlock.html' %}
+
+{% block firstrow %}
+<p>
+Welcome {{ username }}
+</p>
+ <form action = "http://localhost:81/predictsalary" method = "post">
+   <p>Year of Experience: <input type = "text" name = "yoe" /></p>
+   <p><input type = "submit" value = "submit" onclick="validatestring()" /></p>
+</form>
+<p>
+Salary : {{ predictedsalary }}
+</p>
+
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends 'OneHorizontalBlock.html' %}
+{{ from markupsafe import Markup }}
+{% block firstrow %}
+<p>
+Welcome {{ username }}
+</p>
+<table border = 1>
+        <tr>
+            <td>Subject</td>
+            <td>Marks</td>
+        </tr>
+        {% for key, value in results.items() %}
+        <tr>
+            <td>{{ key }}</td>
+            <td>{{ value }}</td>
+        </tr>
+        {% endfor %}
+      </table>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends 'OneHorizontalBlock.html' %}
+{% block firstrow %}
+<p>
+Welcome {{ username }}
+
+</p>
+<table border = 1>
+    <tr>
+        <td><p><a href='/registeruser'>Get All Data</a></p></td>
+    </tr>
+    <tr>
+        <td><p><a href='/predictsalary'>Predict Salary Based on YOE</a></p></td>
+    </tr>   
+</table>
+{% endblock %}

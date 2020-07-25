@@ -1,0 +1,31 @@
+<html>
+<head>
+{% block head %}
+<script type = "text/javascript" 
+         src = "{{ url_for('static', filename = 'common.js') }}" ></script>
+{% endblock %}
+{% block title %}{% endblock %}
+</head>
+<body>
+<table border="1" width="70%" align="center">
+    <tr>
+        <td colspan="2">
+            <table>
+                <tr>
+                    <td>
+                        <h1> Predictors </h1>
+                    </td>
+                    <td>
+                        <h1> <a href='/logout'>Logout</a> </h1>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%">Left Panel</td>
+        <td width="80%" align="center">{% block body %}TEST{% endblock %}</td>
+    </tr>
+</table>
+</body>
+</html>
